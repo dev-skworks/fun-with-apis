@@ -1,6 +1,6 @@
 
 
-document.querySelector('button').addEventListener('click', apiRequest)
+document.querySelector('.cat-btn').addEventListener('click', apiRequest)
 
 async function apiRequest(){
 

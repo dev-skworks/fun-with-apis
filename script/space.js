@@ -1,4 +1,4 @@
-document.querySelector('button').addEventListener('click', getFetch)
+document.querySelector('.space-btn').addEventListener('click', getFetch)
 
 function getFetch(){
   let randomDate = getRandomDate();
@@ -8,7 +8,7 @@ function getFetch(){
       .then(res => res.json()) // parse response as JSON
       .then(data => {
         console.log(data)
-        document.querySelector('img').src = data.hdurl
+        document.querySelector('.space-img').src = data.hdurl
         document.querySelector('h2').innerText = data.title
         document.querySelector('h3').innerText = data.explanation
       })
