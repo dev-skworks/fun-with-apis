@@ -1,4 +1,4 @@
-document.querySelector('button').addEventListener('click', getFetch)
+document.querySelector('.doggo-btn').addEventListener('click', getFetch)
 
 function getFetch(){
 
@@ -8,7 +8,7 @@ function getFetch(){
       .then(res => res.json()) // parse response as JSON
       .then(data => {
         console.log(data)
-        document.querySelector('img').src = data.message
+        document.querySelector('.dog-img').src = data.message
       })
       .catch(err => {
           console.log(`error ${err}`)

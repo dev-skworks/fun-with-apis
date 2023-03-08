@@ -1,4 +1,4 @@
-document.querySelector('button').addEventListener('click', apiRequest)
+document.querySelector('.joke-btn').addEventListener('click', apiRequest)
 
 async function apiRequest(){
 
